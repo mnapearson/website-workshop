@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="index.js" defer></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <title>WEBSITE WORKSHOP</title>
   </head>
   <body>
@@ -18,7 +19,21 @@
     <header id="home"><h1>PARADISE</h1></header>
     <section class="about" id="about"><h2>about</h2></section>
     <section class="work" id="work"><h2>work</h2></section>
-    <section class="contact" id="contact"><h2>contact</h2></section>
-    <footer></footer>
+    <section class="contact" id="contact">
+      <h2>contact</h2>
+      <form id="contact-form">
+        <input type="hidden" name="contact_number" />
+
+        <input type="text" name="user_name" placeholder="name" />
+
+        <input type="email" name="user_email" placeholder="email" />
+
+        <textarea name="message" placeholder="message"></textarea>
+        <input type="submit" value="Send" />
+      </form>
+    </section>
+    <footer>
+      <a href="instagram.com">instagram</a><a href="linkedin.com">LinkedIn</a>
+    </footer>
   </body>
 </html>
